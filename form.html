@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="description" content="Форма для заполнения Avanto Models"/>
+   <meta name="og:description" content="Форма для заполнения Avanto Models"/>
+   <meta property="og:site_name" content="Avanto Models"/>
+   <meta property="og:locale" content="ru_KG"/>
+   <meta property="og:title" content="Форма для заполнения Avanto Models"/>
+   <link rel="stylesheet" href="form.css?v11">
+   <title itemprop="name">Форма для заполнения</title>
+   <meta name="theme-color" content="#363636">
+   <link rel="icon" type="image/png" href="icons/favicon.png">
+   <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="icons/favicon180.png">
+   <link rel="manifest" type="image/png" href="icons/favicon.png">
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171480318-1"></script>
+   <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+   gtag('config', 'UA-171480318-1');
+   </script>
+</head>
+<body>
+   <div class="support"><div style="color: white;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%); z-index:2000;">Сайт недоступен на вашем устройстве</div></div>
+   
+   <div class="start">
+      <div class="a"></div>
+      <div class="v"></div>
+      <div class="a2"></div>
+      <div class="n"></div>
+      <div class="t"></div>
+      <div class="o"></div>
+      <h1 class="starth">Форма для заполнения</h1>
+   </div>
+   <header>
+      <a class="logolink" href="index.html"><img class="headerlogob" src="icons/logowhite.svg" alt="logo"></a> 
+      <a class="close portfiliolink" href="school.html"></a>
+   </header>
+
+  
+   <section class="center">
+   <h2>РАССКАЖИТЕ О СЕБЕ</h2>
+   <div class="punkt">все пункты обязательны к заполнению</div>
+   <br>
+   <form enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'send.php')">
+      <div class="text">имя и фамилия:</div>
+      <input class="contact" type="name" name="name" minlength="5" maxlength="20" required placeholder=" 5-20 символов" autocomplete="name">
+      <br><br><br>
+
+      <div class="text">интересное о себе:</div>
+      <textarea class="self" name="self" cols="40" rows="5" minlength="10" maxlength="1500" required placeholder=" 10-1500 символов"></textarea>
+      <br><br><br>
+      
+      <div class="text">обхват груди, талии и бедер:</div>
+      <input class="size" type="tel" name="chest" minlength="2" maxlength="3" required placeholder=" 90">
+      <div class="text sizetxt">-</div>
+      <input class="size" type="tel" name="waist" minlength="2" maxlength="3" required placeholder=" 60">
+      <div class="text sizetxt">-</div>
+      <input class="size" type="tel" name="hips" minlength="2" maxlength="3" required placeholder=" 90">
+      <br><br><br>
+
+      <div class="text">рост:</div>
+      <input class="contact" style="margin-bottom: 15px;" type="number" name="height" placeholder=" 175" pattern="[0-9]{3}" required>
+      <div class="text">вес:</div>
+      <input class="contact" type="number" name="weight" placeholder=" 60" pattern="[0-9]{3}" required>
+      <br><br><br>
+
+      <div class="text">дата рождения:</div>
+      <label>
+         <input class="date" type="date" name="date" max="2015-01-01" required>
+      </label>
+      <br><br><br>
+
+      <div class="text">цвет волос:</div>
+      <br>
+      <input class="black radio" id="black" type="radio" name="hair" required value="ЧЕРНЫЕ">
+      <input class="white radio" id="white" type="radio" name="hair" value="СЕРЫЕ/БЕЛЫЕ">
+      <input class="redhead radio" id="redhead" type="radio" name="hair" value="РЫЖИЕ">
+      <input class="brown radio" id="brown" type="radio" name="hair" value="КОРИЧНЕВЫЕ">
+      <input class="blond radio" id="blond" type="radio" name="hair" value="СВЕТЛЫЕ/БЕЛОКУРЫЕ">
+      <input class="other radio" id="other" type="radio" name="hair" value="ДРУГИЕ">
+      <label class="bk tudasuda" for="black">ЧЕРНЫЕ</label>
+      <label class="we tudasuda" for="white">СЕРЫЕ/БЕЛЫЕ</label>
+      <br class="phbr"><br class="phbr">
+      <label class="bn tudasuda" for="brown">КОРИЧНЕВЫЕ</label>
+      <br class="pcbr"><br class="pcbr">
+      <label class="rd tudasuda" for="redhead">РЫЖИЕ</label>
+      <br class="phbr"><br class="phbr">
+      <label class="bd tudasuda" for="blond">СВЕТЛЫЕ/БЕЛОКУРЫЕ</label>
+      <label class="or tudasuda" for="other">ДРУГИЕ</label>
+      <br><br><br>
+      
+      <div class="text">цвет глаз:</div><br>
+      <input class="blackes radio" id="blackes" type="radio" name="eyes" required value="ЧЕРНЫЕ">
+      <input class="gray radio" id="gray" type="radio" name="eyes" value="СЕРЫЕ">
+      <input class="green radio" id="green" type="radio" name="eyes" value="ЗЕЛЕНЫЕ">
+      <input class="brownes radio" id="brownes" type="radio" name="eyes" value="КОРИЧНЕВЫЕ">
+      <input class="blue radio" id="blue" type="radio" name="eyes" value="ГОЛУБЫЕ">
+      <input class="otheres radio" id="otheres" type="radio" name="eyes" value="ДРУГИЕ/ГЕТЕРОХРОМИЯ">
+      <label class="bkes tudasuda" for="blackes">ЧЕРНЫЕ</label>
+      <label class="bnes tudasuda" for="brownes">КОРИЧНЕВЫЕ</label>
+      <br class="phbr"><br class="phbr">
+      <label class="gn tudasuda" for="green">ЗЕЛЕНЫЕ</label>
+      <br class="pcbr"><br class="pcbr">
+      <label class="be tudasuda" for="blue">ГОЛУБЫЕ</label>
+      <br class="phbr"><br class="phbr">
+      <label class="gy tudasuda" for="gray">СЕРЫЕ</label>
+      <label class="ores tudasuda" for="otheres">ДРУГИЕ/ГЕТЕРОХРОМИЯ</label>
+      <br><br><br>
+      
+      <div class="text">я:</div><br>
+         <input class="exp radio" type="radio" id="exp" name="exp" required value="ХОЧУ СТАТЬ МОДЕЛЬЮ">
+         <input class="exp2 radio" type="radio" id="exp2" name="exp" value="МОДЕЛЬ С ОПЫТОМ">
+         <label class="tudasuda ep" for="exp">ХОЧУ СТАТЬ МОДЕЛЬЮ</label>
+         <br><br>
+         <label class="tudasuda ep2" for="exp2">МОДЕЛЬ С ОПЫТОМ</label>
+         <br><br><br>
+         
+         <div class="text">покажите себя в трех фотографиях<br> (jpeg, jpg):</div><br>
+         <div class="phcenter">
+            <input class="phinput" accept="image/jpeg, image/png" type="file" name="myfile[]" multiple id="myfile" onchange='document.querySelector(".ph .nnn").innerHTML = Array.from(this.files).map(f => f.name).join("<br />")' required>
+            <label class="ph" for="myfile">ЗАГРУЗИТЬ <div class="nnn"></div></label><br><br>
+         </div><br>
+      <div class="text">номер телефона:</div>
+      <input class="contact" type="text" name="contact" minlength="10" maxlength="10" required placeholder=" 0777110611" autocomplete="tel">
+      <br><br><br><br>
+      <button class="send" type="submit">ГОТОВО</button>
+   </form>
+   </section>
+   <div class="succes">
+      <div class="succestxt">ФОРМА ОТПРАВЛЕНА!</div>
+   </div>
+</body>
+<script src="form.js"></script> 
+</html>
